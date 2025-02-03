@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .glow {
+    text-shadow: 0 0 5px #FF9E64, 0 0 10px #FF9E64;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@layer components {
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+}
+
+.terminal-section {
+  position: relative;
+  padding: 0.5rem;
+}
+
+.terminal-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(255, 158, 100, 0.05),
+    rgba(255, 158, 100, 0.02)
+  );
+  pointer-events: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
