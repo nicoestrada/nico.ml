@@ -50,9 +50,9 @@ export default function Home() {
               {'>'}cat contact.txt
             </h2>
             <div className="space-y-1 opacity-90">
-              <p>Email: ne13@illinois.edu</p>
-              <p>GitHub: github.com/nicoestrada</p>
-              <p>X: x.com/nicosestrada</p>
+              <p>Email: <a href="mailto:ne13@illinois.edu" className="hover:text-[#FFB067] underline">ne13@illinois.edu</a></p>
+              <p>GitHub: <a href="https://github.com/nicoestrada" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFB067] underline">github.com/nicoestrada</a></p>
+              <p>X: <a href="https://x.com/nicosestrada" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFB067] underline">x.com/nicosestrada</a></p>
             </div>
           </section>
         </main>
